@@ -1,0 +1,15 @@
+<h1> <%= @user.name %>'s Profile</h1>
+
+<h3> <%= @user.name %>'s Events</h3>
+<ul>
+  <%= render @user.events %>
+</ul>
+
+<h3> <%= @user.name %>'s Upcoming Events:</h3>
+<ul>
+  <%= render @upcoming_events %>
+</ul>
+<h3> Past Events:</h3>
+<ul>
+  <%= render @past_events %>
+</ul>
